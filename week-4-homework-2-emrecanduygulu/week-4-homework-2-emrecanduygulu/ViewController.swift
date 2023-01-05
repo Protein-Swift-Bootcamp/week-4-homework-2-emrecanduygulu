@@ -12,8 +12,13 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        viewModel.fetchAlbums(for: "aacayipsin")
+        print(viewModel.albums)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 5) { [weak self] in
+            print(self!.viewModel.albums)
+        }
     }
 
-
+    let viewModel = AlbumListViewModel()
 }
 

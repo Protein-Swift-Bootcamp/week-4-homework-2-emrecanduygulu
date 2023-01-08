@@ -49,7 +49,7 @@ class DetailView: UIView {
         detailStack.translatesAutoresizingMaskIntoConstraints = false
         addSubview(detailStack)
         NSLayoutConstraint.activate([
-            detailStack.leadingAnchor.constraint(equalTo: self.leadingAnchor),
+            detailStack.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 10),
             detailStack.trailingAnchor.constraint(equalTo: self.trailingAnchor),
             detailStack.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor),
             detailStack.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: 10),

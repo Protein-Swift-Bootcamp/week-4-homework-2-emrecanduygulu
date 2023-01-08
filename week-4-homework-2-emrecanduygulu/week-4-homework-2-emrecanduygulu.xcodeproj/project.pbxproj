@@ -7,33 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		259407912964ACFE00C615D3 /* SongListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259407902964ACFE00C615D3 /* SongListViewModel.swift */; };
+		252DC371296997860010FED3 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252DC370296997860010FED3 /* ListViewController.swift */; };
+		25649FC5296AF3E800024664 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25649FC4296AF3E800024664 /* DetailViewModel.swift */; };
+		25649FC9296AF6B000024664 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25649FC8296AF6B000024664 /* DetailViewController.swift */; };
+		259141AC296707CA001E2892 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259141AB296707CA001E2892 /* ListView.swift */; };
+		259141B3296715F2001E2892 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259141B2296715F2001E2892 /* DetailView.swift */; };
 		259407932964B48100C615D3 /* CellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259407922964B48100C615D3 /* CellView.swift */; };
 		25E178CA296323EA00CE889A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E178C9296323EA00CE889A /* AppDelegate.swift */; };
-		25E178CC296323EA00CE889A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E178CB296323EA00CE889A /* SceneDelegate.swift */; };
-		25E178CE296323EA00CE889A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E178CD296323EA00CE889A /* ViewController.swift */; };
-		25E178D1296323EA00CE889A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25E178CF296323EA00CE889A /* Main.storyboard */; };
 		25E178D3296323EC00CE889A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25E178D2296323EC00CE889A /* Assets.xcassets */; };
 		25E178D6296323EC00CE889A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25E178D4296323EC00CE889A /* LaunchScreen.storyboard */; };
 		25E178E12963539400CE889A /* AlbumListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E178E02963539400CE889A /* AlbumListViewModel.swift */; };
 		25E178E32963566B00CE889A /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E178E22963566B00CE889A /* Album.swift */; };
-		25E178E52963571500CE889A /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E178E42963571500CE889A /* Song.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		259407902964ACFE00C615D3 /* SongListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongListViewModel.swift; sourceTree = "<group>"; };
+		252DC370296997860010FED3 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		25649FC4296AF3E800024664 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		25649FC8296AF6B000024664 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		259141AB296707CA001E2892 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		259141B2296715F2001E2892 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		259407922964B48100C615D3 /* CellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellView.swift; sourceTree = "<group>"; };
 		25E178C6296323EA00CE889A /* week-4-homework-2-emrecanduygulu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "week-4-homework-2-emrecanduygulu.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		25E178C9296323EA00CE889A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		25E178CB296323EA00CE889A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		25E178CD296323EA00CE889A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		25E178D0296323EA00CE889A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		25E178D2296323EC00CE889A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		25E178D5296323EC00CE889A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		25E178D7296323EC00CE889A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		25E178E02963539400CE889A /* AlbumListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumListViewModel.swift; sourceTree = "<group>"; };
 		25E178E22963566B00CE889A /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
-		25E178E42963571500CE889A /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +47,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		252DC36D296997100010FED3 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				252DC36F2969973D0010FED3 /* Detail */,
+				252DC36E296997310010FED3 /* List */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		252DC36E296997310010FED3 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				259407922964B48100C615D3 /* CellView.swift */,
+				259141AB296707CA001E2892 /* ListView.swift */,
+				25E178E02963539400CE889A /* AlbumListViewModel.swift */,
+				252DC370296997860010FED3 /* ListViewController.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		252DC36F2969973D0010FED3 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				259141B2296715F2001E2892 /* DetailView.swift */,
+				25649FC4296AF3E800024664 /* DetailViewModel.swift */,
+				25649FC8296AF6B000024664 /* DetailViewController.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
 		25E178BD296323E900CE889A = {
 			isa = PBXGroup;
 			children = (
@@ -66,13 +96,9 @@
 		25E178C8296323EA00CE889A /* week-4-homework-2-emrecanduygulu */ = {
 			isa = PBXGroup;
 			children = (
+				252DC36D296997100010FED3 /* Screens */,
 				25E178DF2963538400CE889A /* Model */,
-				25E178DE2963537C00CE889A /* ViewModel */,
-				25E178DD2963537200CE889A /* View */,
 				25E178C9296323EA00CE889A /* AppDelegate.swift */,
-				25E178CB296323EA00CE889A /* SceneDelegate.swift */,
-				25E178CD296323EA00CE889A /* ViewController.swift */,
-				25E178CF296323EA00CE889A /* Main.storyboard */,
 				25E178D2296323EC00CE889A /* Assets.xcassets */,
 				25E178D4296323EC00CE889A /* LaunchScreen.storyboard */,
 				25E178D7296323EC00CE889A /* Info.plist */,
@@ -80,28 +106,10 @@
 			path = "week-4-homework-2-emrecanduygulu";
 			sourceTree = "<group>";
 		};
-		25E178DD2963537200CE889A /* View */ = {
-			isa = PBXGroup;
-			children = (
-				259407922964B48100C615D3 /* CellView.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		25E178DE2963537C00CE889A /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				25E178E02963539400CE889A /* AlbumListViewModel.swift */,
-				259407902964ACFE00C615D3 /* SongListViewModel.swift */,
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
 		25E178DF2963538400CE889A /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				25E178E22963566B00CE889A /* Album.swift */,
-				25E178E42963571500CE889A /* Song.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -166,7 +174,6 @@
 			files = (
 				25E178D6296323EC00CE889A /* LaunchScreen.storyboard in Resources */,
 				25E178D3296323EC00CE889A /* Assets.xcassets in Resources */,
-				25E178D1296323EA00CE889A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,28 +184,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				25E178E52963571500CE889A /* Song.swift in Sources */,
-				25E178CE296323EA00CE889A /* ViewController.swift in Sources */,
+				252DC371296997860010FED3 /* ListViewController.swift in Sources */,
+				25649FC5296AF3E800024664 /* DetailViewModel.swift in Sources */,
 				25E178CA296323EA00CE889A /* AppDelegate.swift in Sources */,
-				259407912964ACFE00C615D3 /* SongListViewModel.swift in Sources */,
+				259141B3296715F2001E2892 /* DetailView.swift in Sources */,
 				259407932964B48100C615D3 /* CellView.swift in Sources */,
-				25E178CC296323EA00CE889A /* SceneDelegate.swift in Sources */,
 				25E178E12963539400CE889A /* AlbumListViewModel.swift in Sources */,
+				25649FC9296AF6B000024664 /* DetailViewController.swift in Sources */,
 				25E178E32963566B00CE889A /* Album.swift in Sources */,
+				259141AC296707CA001E2892 /* ListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		25E178CF296323EA00CE889A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				25E178D0296323EA00CE889A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		25E178D4296323EC00CE889A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -336,7 +336,6 @@
 				INFOPLIST_FILE = "week-4-homework-2-emrecanduygulu/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -364,7 +363,6 @@
 				INFOPLIST_FILE = "week-4-homework-2-emrecanduygulu/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

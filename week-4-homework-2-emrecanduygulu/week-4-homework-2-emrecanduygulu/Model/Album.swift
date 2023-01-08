@@ -6,6 +6,10 @@
 //
 //   let albumResult = try? JSONDecoder().decode(AlbumResult.self, from: jsonData)
 
+// APIden gelen şarkılar songCell e atılacak
+// makeLabel helper olarak eklenecek
+
+
 import Foundation
 
 struct AlbumResult: Codable {
@@ -13,30 +17,27 @@ struct AlbumResult: Codable {
     let results: [Album]
 }
 
-struct Album: Codable, Identifiable {
+struct Album: Codable {
     let wrapperType, collectionType: String
     let id: Int
     let artistID: Int
     let amgArtistID: Int?
-    let artistName, collectionName, collectionCensoredName: String
-    let artistViewURL: String?
-    let collectionViewURL: String
-    let artworkUrl60, artworkUrl100: String
-    let collectionPrice: Double
-    let collectionExplicitness: String
+    let artistName, collectionName: String
+    let artistViewURL: URL?
+    let collectionViewURL: URL
+    let artworkUrl60, artworkUrl100: URL
     let trackCount: Int
-    let copyright, country, currency: String
-    let releaseDate: String
-    let primaryGenreName: String 
-
+    
+    
     enum CodingKeys: String, CodingKey {
         case wrapperType, collectionType
         case artistID = "artistId"
         case id = "collectionId"
         case amgArtistID = "amgArtistId"
-        case artistName, collectionName, collectionCensoredName
+        case artistName, collectionName
         case artistViewURL = "artistViewUrl"
         case collectionViewURL = "collectionViewUrl"
-        case artworkUrl60, artworkUrl100, collectionPrice, collectionExplicitness, trackCount, copyright, country, currency, releaseDate, primaryGenreName
+        case artworkUrl60, artworkUrl100
+        case trackCount
     }
 }

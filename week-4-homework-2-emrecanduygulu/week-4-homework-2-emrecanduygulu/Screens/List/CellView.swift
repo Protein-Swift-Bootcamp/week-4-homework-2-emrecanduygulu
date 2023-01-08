@@ -9,21 +9,13 @@ import UIKit
 
 class CellView: UITableViewCell {
     
-    lazy var albumLabel = makeLabel(font: .systemFont(ofSize: 12))
-    lazy var artistLabel = makeLabel(font: .systemFont(ofSize: 12))
-    let albumImageView = UIImageView()
+    static let cellId = "CellViewCellId"
     
-    private lazy var HStack: UIStackView = {
-        let HStackView = UIStackView(arrangedSubviews: [
-            albumImageView,
-            VStack
-        ])
-        HStackView.axis = .horizontal
-        HStackView.spacing = 5
-        HStackView.alignment = .fill
-        HStackView.distribution = .fill
-        return HStackView
-    }()
+    lazy var albumLabel = makeLabel(font: .boldSystemFont(ofSize: 18))
+    lazy var artistLabel = makeLabel(font: .systemFont(ofSize: 16))
+    
+    
+    
     
     private lazy var VStack: UIStackView = {
         let VStackView = UIStackView(arrangedSubviews: [
@@ -34,30 +26,42 @@ class CellView: UITableViewCell {
         VStackView.spacing = 5
         VStackView.alignment = .fill
         VStackView.distribution = .fill
+        VStackView.translatesAutoresizingMaskIntoConstraints = false
         return VStackView
     }()
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
-        addSubview(HStack)
+        
+        addSubview(VStack)
         NSLayoutConstraint.activate([
-            HStack.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 10),
-            HStack.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -10),
-            HStack.topAnchor.constraint(equalTo: self.topAnchor, constant: 10),
-            HStack.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -10)
+            VStack.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 10),
+            VStack.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -10),
+            VStack.topAnchor.constraint(equalTo: self.topAnchor, constant: 10),
+            VStack.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -10)
+            
         ])
+        
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-     private func makeLabel(font: UIFont) -> UILabel {
+    private func makeLabel(font: UIFont) -> UILabel {
         let label = UILabel()
         label.textColor = .black
         label.numberOfLines = 1
         label.textAlignment = .left
+        label.font = font
         return label
+    }
+}
+
+extension CellView {
+    func populate(with album: Album){
+        albumLabel.text = album.collectionName
+        artistLabel.text = album.artistName
     }
 }

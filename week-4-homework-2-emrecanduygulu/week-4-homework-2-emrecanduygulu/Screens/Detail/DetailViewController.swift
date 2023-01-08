@@ -24,7 +24,6 @@ class DetailViewController: UIViewController, DetailViewModelOutput {
         }
     }
     
-    
     private lazy var viewSource = DetailView()
     let viewModel: DetailViewModel
     
